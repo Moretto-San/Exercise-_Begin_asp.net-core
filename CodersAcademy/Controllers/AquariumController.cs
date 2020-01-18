@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting;
+﻿using CodersAcademy.Filter;
+using CodersAcademy.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Underwater.Models;
+using System;
 
 namespace Underwater.Controllers
 {
+    //[LogActionFilter]
     public class AquariumController : Controller
     {
+        private readonly IRepository _repository;
+        
+        public AquariumController(IRepository repository)
+        {
+            _repository = repository ?? throw new ArgumentNullException();
+        }
+        
         public IActionResult Index()
         {
             return View();

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CodersAcademy.Middleware;
+using CodersAcademy.Repository;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,7 +18,10 @@ namespace Underwater
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureRepository();
+
             services.AddMvc();
+
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -25,6 +30,7 @@ namespace Underwater
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                app.LogRequest();
             }
             else
             {
