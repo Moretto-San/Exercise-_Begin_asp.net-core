@@ -18,10 +18,6 @@ namespace CodersAcademy.Middleware
                     var headers = JsonConvert.SerializeObject(context.Request.Headers);
                     var query = JsonConvert.SerializeObject(context.Request.QueryString);
                     Console.WriteLine("Executando o Path: {0}", context.Request.Path);
-                    if (context.Request.ContentType != null
-                    && context.Request.ContentType != "application/javascript"
-                    && context.Request.Method == "POST")
-                        Console.WriteLine("Executando o Body: {0}", JsonConvert.SerializeObject(context.Request.Body));
                     Console.WriteLine("Executando o Query: {0}", query);
                     Console.WriteLine("Executando o Headers: {0}", headers);
                 });

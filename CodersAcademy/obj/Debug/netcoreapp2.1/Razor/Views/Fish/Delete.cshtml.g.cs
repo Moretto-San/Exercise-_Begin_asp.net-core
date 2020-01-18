@@ -166,12 +166,12 @@ WriteAttributeValue("", 670, Url.Action("GetImage", "Aquarium", new { Id = Model
             WriteLiteral("\n            </p>\n        </div>\n    </div>\n    ");
             EndContext();
             BeginContext(1371, 308, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "500ce338c2294e80a44ddea2ec0f70ce", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b4e0830a9084180ae511082e0ec603e", async() => {
                 BeginContext(1397, 9, true);
                 WriteLiteral("\n        ");
                 EndContext();
                 BeginContext(1406, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cdc818f55ca84f179664fa4ca2e7e5b1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3b998733265949c081cd64d2cc16c3c7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

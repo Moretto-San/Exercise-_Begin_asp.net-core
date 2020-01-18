@@ -7,7 +7,7 @@ namespace CodersAcademy.Repository
 
         public static void ConfigureRepository(this IServiceCollection services)
         {
-            services.AddScoped<IRepository, UnderwaterRepository>();
+            services.AddScoped<Irepository, UnderwaterRepository>();
         }
 
     }

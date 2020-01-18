@@ -1,9 +1,14 @@
-﻿using CodersAcademy.Middleware;
+﻿using CodersAcademy.Data;
+using CodersAcademy.Middleware;
+using CodersAcademy.Models;
 using CodersAcademy.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Underwater
 {
@@ -20,6 +25,34 @@ namespace Underwater
         {
             services.ConfigureRepository();
 
+            services.AddDbContext<UnderWaterContext>(options =>
+            {
+                options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+            });
+
+            services.AddDbContext<UserDbContext>(options =>
+            {
+                options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+            });
+
+            services.AddDefaultIdentity<UserAccount>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 7;
+                options.Password.RequireUppercase = true;
+
+                options.User.RequireUniqueEmail = true;
+
+            }).AddEntityFrameworkStores<UserDbContext>();
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = $"/UserAccount/Login";
+                options.LogoutPath = $"/UserAccount/LoginOut";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+                options.SlidingExpiration = true;
+            });
+
             services.AddMvc();
 
         }
@@ -30,13 +63,16 @@ namespace Underwater
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
-                app.LogRequest();
+                
             }
             else
             {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
+
+            app.LogRequest();
+            app.UseAuthentication();
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {

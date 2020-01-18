@@ -3,7 +3,7 @@ using Underwater.Models;
 
 namespace CodersAcademy.Repository
 {
-    public interface IRepository
+    public interface Irepository
     {
         IEnumerable<Fish> GetFishes();
         IEnumerable<Aquarium> GetAquarium();

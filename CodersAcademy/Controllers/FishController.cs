@@ -1,23 +1,24 @@
 ﻿using CodersAcademy.Filter;
 using CodersAcademy.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace Underwater.Controllers
 {
-    //[LogActionFilter]
+    [Authorize]
     public class FishController : Controller
     {
-        private readonly IRepository _repository;
+        private readonly Irepository _repository;
         
-        public FishController(IRepository repository)
+        public FishController(Irepository repository)
         {
             _repository = repository ?? throw new ArgumentNullException();
         }
         
         public IActionResult Index()
         {
-            return View();
+            return View(this._repository.GetFishes());
         }
 
     }
