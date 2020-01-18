@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Account\Register.cshtml" />
+    <None Include="Views\Aquarium\Create.cshtml" />
+    <None Include="Views\Aquarium\Delete.cshtml" />
+    <None Include="Views\Aquarium\Details.cshtml" />
+    <None Include="Views\Aquarium\Edit.cshtml" />
+    <None Include="Views\Aquarium\Index.cshtml" />
+    <None Include="Views\Fish\Index.cshtml" />
     <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.css.map" />
     <None Include="wwwroot\bootstrap\dist\css\bootstrap-grid.min.css.map" />
     <None Include="wwwroot\bootstrap\dist\css\bootstrap-reboot.css.map" />

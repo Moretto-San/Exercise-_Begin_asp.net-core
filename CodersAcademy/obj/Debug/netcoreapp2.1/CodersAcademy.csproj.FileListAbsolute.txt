@@ -36,7 +36,6 @@ C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcor
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\CodersAcademy.TagHelpers.input.cache
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\CodersAcademy.TagHelpers.output.cache
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\CodersAcademy.RazorCoreGenerate.cache
-C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Aquarium\Index.cshtml.g.cs
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_FormAquarium.cshtml.g.cs
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\UserAccount\Login.cshtml.g.cs
@@ -60,3 +59,15 @@ C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\bin\Debug\netcor
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\CodersAcademy.Views.pdb
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\CodersAcademy.csproj.CopyComplete
 C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\CodersAcademy.csprojAssemblyReference.cache
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Fish\Create.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Fish\Delete.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Fish\Details.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Fish\Edit.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Fish\Index.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Aquarium\Create.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Aquarium\Delete.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Aquarium\Details.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Aquarium\Edit.cshtml.g.cs
+C:\Users\rafae\OneDrive\Downloads\Exercise _Begin\CodersAcademy\obj\Debug\netcoreapp2.1\Razor\Views\Aquarium\Index.cshtml.g.cs

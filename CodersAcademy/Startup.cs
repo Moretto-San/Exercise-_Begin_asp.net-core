@@ -37,13 +37,13 @@ namespace Underwater
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "CodersAcademyRoute",
                     template: "{controller}/{action}/{id?}",
-                    defaults: new { controller = "Aquarium", action = "Index" },
+                    defaults: new { controller = "Fish", action = "Index" },
                     constraints: new { id = "[0-9]+" });
             });
         }

@@ -6,11 +6,11 @@ using System;
 namespace Underwater.Controllers
 {
     //[LogActionFilter]
-    public class AquariumController : Controller
+    public class FishController : Controller
     {
         private readonly IRepository _repository;
         
-        public AquariumController(IRepository repository)
+        public FishController(IRepository repository)
         {
             _repository = repository ?? throw new ArgumentNullException();
         }
